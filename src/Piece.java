@@ -10,8 +10,12 @@ abstract class Piece {
         this.y = y;
     }
 
-    private Boolean isMoveValid (int x, int y) {
-        return Math.abs(x - this.x) <= 1 && Math.abs(y - this.y) <= 1;
+    public Boolean isMoveValid (int x, int y) {
+        if (Math.abs(this.x - x) > 1)
+            return false;
+        if (Math.abs(this.y - y) > 1)
+            return false;
+        return this.x == x || this.y == y;
     }
 
     abstract Boolean canKill (Piece piece);
