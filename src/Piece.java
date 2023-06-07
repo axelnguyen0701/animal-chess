@@ -11,9 +11,7 @@ abstract class Piece {
     }
 
     private Boolean isMoveValid (int x, int y) {
-       if (Math.abs(x - this.x) > 1 || Math.abs(y - this.y) > 1)
-           return false;
-       return true;
+        return Math.abs(x - this.x) <= 1 && Math.abs(y - this.y) <= 1;
     }
 
     abstract Boolean canKill (Piece piece);
