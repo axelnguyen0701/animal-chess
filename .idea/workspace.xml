@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdf1d572-55d5-4a79-a73c-77e6b5589e74" name="Changes" comment="Piece if statement changed">
-      <change afterPath="$PROJECT_DIR$/src/PieceTest.java" afterDir="false" />
+    <list default="true" id="cdf1d572-55d5-4a79-a73c-77e6b5589e74" name="Changes" comment="Change check move valid and add test">
+      <change afterPath="$PROJECT_DIR$/src/Tiger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TigerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Piece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,28 +61,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PieceTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="animal-chess" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElephantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="animal-chess" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ElephantTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LionTest.canKill">
     <configuration name="LionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="animal-chess" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LionTest.canKill" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="animal-chess" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LionTest" />
+      <option name="METHOD_NAME" value="canKill" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,13 +100,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TigerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="animal-chess" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TigerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LionTest.canKill" />
+        <item itemvalue="JUnit.TigerTest" />
         <item itemvalue="JUnit.PieceTest" />
         <item itemvalue="JUnit.PieceTest.testIsMoveValid" />
         <item itemvalue="JUnit.LionTest" />
-        <item itemvalue="JUnit.ElephantTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686130689094</updated>
-      <workItem from="1686130690514" duration="4249000" />
+      <workItem from="1686130690514" duration="4608000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1686134924079</created>
@@ -154,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686135011497</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Change check move valid and add test">
+      <created>1686135771276</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686135771276</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +186,7 @@
     <MESSAGE value="Add piece, elephant, and lion" />
     <MESSAGE value="Add test for elephant and lion" />
     <MESSAGE value="Piece if statement changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Piece if statement changed" />
+    <MESSAGE value="Change check move valid and add test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change check move valid and add test" />
   </component>
 </project>
