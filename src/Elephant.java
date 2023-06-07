@@ -1,7 +1,6 @@
 public class Elephant extends Piece {
     public Elephant(Color color, int x, int y) {
-        super(color, x, y);
-        this.setRank(8);
+        super(color, x, y,8);
     }
 
     @Override

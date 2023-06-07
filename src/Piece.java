@@ -4,10 +4,26 @@ abstract class Piece {
     private int y;
     private int rank;
 
-    Piece(Color color, int x, int y) {
+    public Boolean getCanSwim() {
+        return canSwim;
+    }
+
+    public void setCanSwim(Boolean canSwim) {
+        this.canSwim = canSwim;
+    }
+
+    private Boolean canSwim = false;
+
+    Piece(Color color, int x, int y, int rank) {
         this.color = color;
         this.x = x;
         this.y = y;
+        this.rank = rank;
+    }
+
+    Piece(Color color, int x, int y, int rank, Boolean canSwim) {
+        this(color, x, y, rank);
+        this.canSwim = canSwim;
     }
 
     public Boolean isMoveValid (int x, int y) {

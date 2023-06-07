@@ -1,7 +1,6 @@
 public class Tiger extends Piece {
     public Tiger(Color color, int x, int y) {
-        super(color, x, y);
-        this.setRank(6);
+        super(color, x, y, 6);
     }
     @Override
     Boolean canKill(Piece piece) {
