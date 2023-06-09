@@ -1,4 +1,8 @@
 import org.junit.jupiter.api.Test;
+import pieces.Color;
+import pieces.Dog;
+import pieces.Elephant;
+import pieces.Mouse;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,3 +1,8 @@
+import pieces.Color;
+import pieces.Elephant;
+import pieces.Lion;
+import pieces.Mouse;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ElephantTest {

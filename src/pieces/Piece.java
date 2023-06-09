@@ -1,7 +1,7 @@
-abstract class Piece {
+package pieces;
+
+public abstract class Piece {
     final Color color;
-    private int x;
-    private int y;
     private int rank;
 
     public Boolean getCanSwim() {
@@ -16,8 +16,6 @@ abstract class Piece {
 
     Piece(Color color, int x, int y, int rank) {
         this.color = color;
-        this.x = x;
-        this.y = y;
         this.rank = rank;
     }
 
@@ -26,34 +24,10 @@ abstract class Piece {
         this.canSwim = canSwim;
     }
 
-    public Boolean isMoveValid (int x, int y) {
-        if (Math.abs(this.x - x) > 1)
-            return false;
-        if (Math.abs(this.y - y) > 1)
-            return false;
-        return this.x == x || this.y == y;
-    }
-
-    abstract Boolean canKill (Piece piece);
+    public abstract Boolean canKill (Piece piece);
 
     public Color getColor() {
         return color;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
     }
 
     public int getRank() {
