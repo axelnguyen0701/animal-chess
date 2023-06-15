@@ -1,8 +1,8 @@
 package pieces;
 
 public class Mouse extends Piece{
-    public Mouse(Color color, int x, int y ) {
-        super(color, x, y, 1, true);
+    public Mouse(Color color) {
+        super(color,  1, true);
     }
 
     @Override

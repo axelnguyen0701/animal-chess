@@ -8,20 +8,20 @@ public abstract class Piece {
         return canSwim;
     }
 
-    public void setCanSwim(Boolean canSwim) {
+    private void setCanSwim(Boolean canSwim) {
         this.canSwim = canSwim;
     }
 
     private Boolean canSwim = false;
 
-    Piece(Color color, int x, int y, int rank) {
+    Piece(Color color, int rank) {
         this.color = color;
         this.rank = rank;
     }
 
-    Piece(Color color, int x, int y, int rank, Boolean canSwim) {
-        this(color, x, y, rank);
-        this.canSwim = canSwim;
+    Piece(Color color, int rank, Boolean canSwim) {
+        this(color, rank);
+        setCanSwim(canSwim);
     }
 
     public abstract Boolean canKill (Piece piece);

@@ -1,8 +1,8 @@
 package pieces;
 
 public class Dog extends Piece{
-    public Dog(Color color, int x, int y) {
-        super(color, x, y, 3, true);
+    public Dog(Color color) {
+        super(color,  3, true);
     }
 
     @Override

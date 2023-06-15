@@ -2,8 +2,8 @@ package pieces;
 
 public class Lion extends Piece{
 
-    public Lion(Color color, int x, int y) {
-        super(color, x, y, 7);
+    public Lion(Color color) {
+        super(color, 7);
     }
 
     @Override

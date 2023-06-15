@@ -1,8 +1,8 @@
 package pieces;
 
 public class Elephant extends Piece {
-    public Elephant(Color color, int x, int y) {
-        super(color, x, y,8);
+    public Elephant(Color color) {
+        super(color, 8);
     }
 
     @Override

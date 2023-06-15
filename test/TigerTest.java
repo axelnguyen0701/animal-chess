@@ -6,8 +6,8 @@ import pieces.Tiger;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TigerTest {
-    private final Elephant elephant = new Elephant(Color.RED, 0, 1);
-    private final Tiger tiger = new Tiger(Color.BLUE, 0, 2);
+    private final Elephant elephant = new Elephant(Color.RED);
+    private final Tiger tiger = new Tiger(Color.BLUE);
     @Test
     void canKill() {
         assertEquals(false, tiger.canKill(elephant));

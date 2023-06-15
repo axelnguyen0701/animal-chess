@@ -1,8 +1,8 @@
 package pieces;
 
 public class Leopard extends Piece {
-    public Leopard(Color color, int x, int y) {
-        super(color, x, y, 5);
+    public Leopard(Color color) {
+        super(color, 5);
     }
 
     @Override

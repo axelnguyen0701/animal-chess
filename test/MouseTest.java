@@ -7,9 +7,9 @@ import pieces.Mouse;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MouseTest {
-    private final Mouse mouse = new Mouse(Color.RED, 0, 1);
-    private final Elephant elephant = new Elephant(Color.BLUE, 0, 2);
-    private final Dog dog = new Dog(Color.BLUE, 0, 0);
+    private final Mouse mouse = new Mouse(Color.RED);
+    private final Elephant elephant = new Elephant(Color.BLUE);
+    private final Dog dog = new Dog(Color.BLUE);
     @Test
     void canKill() {
         assertEquals(true, mouse.canKill(elephant));

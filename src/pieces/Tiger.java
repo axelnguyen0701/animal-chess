@@ -1,8 +1,8 @@
 package pieces;
 
 public class Tiger extends Piece {
-    public Tiger(Color color, int x, int y) {
-        super(color, x, y, 6);
+    public Tiger(Color color) {
+        super(color, 6);
     }
     @Override
     public Boolean canKill(Piece piece) {
