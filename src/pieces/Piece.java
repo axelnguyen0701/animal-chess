@@ -1,5 +1,7 @@
 package pieces;
 
+import java.util.Objects;
+
 public abstract class Piece {
     final Color color;
     private int rank;
@@ -32,6 +34,19 @@ public abstract class Piece {
 
     public int getRank() {
         return rank;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Piece piece = (Piece) o;
+        return rank == piece.rank && color == piece.color;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, rank);
     }
 
     public void setRank(int rank) {
