@@ -1,3 +1,4 @@
+import pieces.Color;
 import pieces.Piece;
 
 import java.util.Objects;
@@ -8,6 +9,8 @@ public class Spot {
     private int y;
     private Boolean isWater = false;
     private Boolean isTrap = false;
+    private Boolean isCave = false;
+    private Color caveColor;
 
     public Spot(Piece piece, int x, int y) {
         this.piece = piece;
@@ -23,6 +26,28 @@ public class Spot {
     public Spot(Piece piece, int x, int y, Boolean isWater, Boolean isTrap) {
         this(piece, x, y);
         this.setTrap(isTrap);
+    }
+
+    public Spot(Piece piece, int x, int y, Boolean isWater, Boolean isTrap, Boolean isCave, Color caveColor) {
+        this(piece, x, y);
+        this.setCave(isCave);
+        this.setCaveColor(caveColor);
+    }
+
+    public Color getCaveColor() {
+        return caveColor;
+    }
+
+    public void setCaveColor(Color caveColor) {
+        this.caveColor = caveColor;
+    }
+
+    public Boolean getCave() {
+        return isCave;
+    }
+
+    public void setCave(Boolean cave) {
+        isCave = cave;
     }
 
     public Boolean getWater() {
@@ -85,9 +110,19 @@ public class Spot {
     public Boolean isMoveValid (Spot spot) {
         if (spot.equals(this))
             return false;
+        //Only dogs and mice
         if (spot.getIsWater() && !spot.getPiece().getCanSwim())
             return false;
-        if (spot.getPiece() != null && !this.getPiece().canKill(spot.getPiece()))
+        if (spot.getPiece().getColor() == this.getPiece().getColor())
+            return false;
+        //only higher rank can kill lower rank (if this is not a trap)
+        if (spot.getPiece() != null && !this.getPiece().canKill(spot.getPiece()) && !this.isTrap)
+            return false;
+        //Cannot kill piece in trap
+        if (spot.getPiece() != null && spot.getTrap())
+            return false;
+        //Can only move to cave if different color
+        if (spot.getCave() && this.getCaveColor() == this.getPiece().getColor())
             return false;
         if (Math.abs(spot.getX() - this.x) > 1)
             return false;
