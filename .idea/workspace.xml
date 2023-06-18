@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdf1d572-55d5-4a79-a73c-77e6b5589e74" name="Changes" comment="Board test init">
-      <change afterPath="$PROJECT_DIR$/test/BoardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player/ComputerPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player/HumanPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/SpotTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Spot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -71,7 +75,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BoardTest">
+  <component name="RunManager" selected="JUnit.SpotTest">
     <configuration name="All in animal-chess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="animal-chess" />
       <option name="PACKAGE_NAME" value="" />
@@ -89,20 +93,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElephantTest.canKill" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="animal-chess" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ElephantTest" />
-      <option name="METHOD_NAME" value="canKill" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="animal-chess" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="animal-chess" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpotTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpotTest" />
         <item itemvalue="JUnit.BoardTest" />
         <item itemvalue="JUnit.All in animal-chess" />
         <item itemvalue="JUnit.TigerTest" />
         <item itemvalue="JUnit.LionTest" />
-        <item itemvalue="JUnit.ElephantTest.canKill" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +141,7 @@
       <workItem from="1686130690514" duration="4768000" />
       <workItem from="1686146725863" duration="4403000" />
       <workItem from="1686287304245" duration="1930000" />
-      <workItem from="1686818523707" duration="8955000" />
+      <workItem from="1686818523707" duration="11166000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1686134924079</created>
@@ -238,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686916740937</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Board test init">
+      <created>1687082912328</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687082912328</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
