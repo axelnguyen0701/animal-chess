@@ -23,6 +23,19 @@ public class Spot {
         this.isWater = isWater;
     }
 
+    @Override
+    public String toString() {
+        return "Spot{" +
+                "piece=" + piece +
+                ", x=" + x +
+                ", y=" + y +
+                ", isWater=" + isWater +
+                ", isTrap=" + isTrap +
+                ", isCave=" + isCave +
+                ", caveColor=" + caveColor +
+                '}';
+    }
+
     public Spot(Piece piece, int x, int y, Boolean isWater, Boolean isTrap) {
         this(piece, x, y);
         this.setTrap(isTrap);
