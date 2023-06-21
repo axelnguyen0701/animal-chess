@@ -123,10 +123,11 @@
         public Boolean isMoveValid (Spot spot) {
             if (spot.equals(this))
                 return false;
-            //Only dogs and mice
+            //Only dogs and mice can cross water
             if (spot.getIsWater() && !this.getPiece().getCanSwim())
                 return false;
-            if(spot.getPiece() != null) {
+
+            if(spot.getPiece() != null || !spot.getPiece().isKilled()) {
                 //only higher rank can kill lower rank (if this is not a trap)
                 if (!this.getPiece().canKill(spot.getPiece()) && !this.isTrap)
                     return false;
