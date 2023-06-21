@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdf1d572-55d5-4a79-a73c-77e6b5589e74" name="Changes" comment="Board test init">
-      <change afterPath="$PROJECT_DIR$/src/GameStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player/ComputerPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player/HumanPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/SpotTest.java" afterDir="false" />
+    <list default="true" id="cdf1d572-55d5-4a79-a73c-77e6b5589e74" name="Changes" comment="Dependencies changes">
+      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Move.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Spot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Piece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -141,7 +138,7 @@
       <workItem from="1686130690514" duration="4768000" />
       <workItem from="1686146725863" duration="4403000" />
       <workItem from="1686287304245" duration="1930000" />
-      <workItem from="1686818523707" duration="11166000" />
+      <workItem from="1686818523707" duration="15903000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1686134924079</created>
@@ -248,7 +245,42 @@
       <option name="project" value="LOCAL" />
       <updated>1687082912328</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add Player">
+      <created>1687085186685</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687085186685</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add GameStatus">
+      <created>1687085207361</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687085207362</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add move class">
+      <created>1687085218732</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1687085218732</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Test some cases in spot">
+      <created>1687085281117</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1687085281117</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Dependencies changes">
+      <created>1687085300708</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1687085300708</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +313,11 @@
     <MESSAGE value="add board" />
     <MESSAGE value="Add equals for piece" />
     <MESSAGE value="Board test init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Board test init" />
+    <MESSAGE value="Add Player" />
+    <MESSAGE value="Add GameStatus" />
+    <MESSAGE value="Add move class" />
+    <MESSAGE value="Test some cases in spot" />
+    <MESSAGE value="Dependencies changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dependencies changes" />
   </component>
 </project>
