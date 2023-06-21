@@ -15,6 +15,9 @@ public abstract class Piece {
     }
 
     private Boolean canSwim = false;
+    private boolean killed = false;
+
+
 
     Piece(Color color, int rank) {
         this.color = color;
@@ -51,5 +54,13 @@ public abstract class Piece {
 
     public void setRank(int rank) {
         this.rank = rank;
+    }
+
+    public boolean isKilled() {
+        return killed;
+    }
+
+    public void setKilled(boolean killed) {
+        this.killed = killed;
     }
 }
