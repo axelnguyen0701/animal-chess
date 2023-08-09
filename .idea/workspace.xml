@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdf1d572-55d5-4a79-a73c-77e6b5589e74" name="Changes" comment="Dependencies changes">
-      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+    <list default="true" id="cdf1d572-55d5-4a79-a73c-77e6b5589e74" name="Changes" comment="Project struct changed">
+      <change afterPath="$PROJECT_DIR$/test/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Spot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Piece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -55,10 +54,10 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -72,7 +71,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpotTest">
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration name="All in animal-chess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="animal-chess" />
       <option name="PACKAGE_NAME" value="" />
@@ -90,11 +89,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="animal-chess" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LionTest" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.playerMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="animal-chess" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="METHOD_NAME" value="playerMove" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,22 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TigerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="animal-chess" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TigerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.playerMove" />
         <item itemvalue="JUnit.SpotTest" />
         <item itemvalue="JUnit.BoardTest" />
         <item itemvalue="JUnit.All in animal-chess" />
-        <item itemvalue="JUnit.TigerTest" />
-        <item itemvalue="JUnit.LionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +138,9 @@
       <workItem from="1686130690514" duration="4768000" />
       <workItem from="1686146725863" duration="4403000" />
       <workItem from="1686287304245" duration="1930000" />
-      <workItem from="1686818523707" duration="15903000" />
+      <workItem from="1686818523707" duration="17556000" />
+      <workItem from="1687492001415" duration="120000" />
+      <workItem from="1691120207030" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1686134924079</created>
@@ -280,7 +282,42 @@
       <option name="project" value="LOCAL" />
       <updated>1687085300708</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add Game class">
+      <created>1687341005615</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1687341005615</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add setter and getter for move">
+      <created>1687341076967</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1687341076967</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add killed field">
+      <created>1687341092200</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1687341092200</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Check if piece is killed">
+      <created>1687341115118</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1687341115118</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Project struct changed">
+      <created>1687341132401</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687341132401</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +355,22 @@
     <MESSAGE value="Add move class" />
     <MESSAGE value="Test some cases in spot" />
     <MESSAGE value="Dependencies changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dependencies changes" />
+    <MESSAGE value="Add Game class" />
+    <MESSAGE value="Add setter and getter for move" />
+    <MESSAGE value="Add killed field" />
+    <MESSAGE value="Check if piece is killed" />
+    <MESSAGE value="Project struct changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project struct changed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Game.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
