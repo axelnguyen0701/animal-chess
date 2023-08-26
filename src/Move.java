@@ -54,4 +54,15 @@ public class Move {
     public void setPieceKilled(Piece pieceKilled) {
         this.pieceKilled = pieceKilled;
     }
+
+    @Override
+    public String toString() {
+        return "Move{" +
+                "start= (" + start.getX() + "," + start.getY() +
+                "), end= (" + end.getX() + "," + end.getY() +
+                "), player=" + player +
+                ", pieceMoved=" + pieceMoved +
+                ", pieceKilled=" + pieceKilled +
+                "}\n";
+    }
 }

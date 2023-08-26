@@ -14,12 +14,12 @@ class SpotTest {
     void setUp() {
         Board board = new Board();
         try {
-            elephantSpot = board.getBox(2,0);
-            upElephantSpot = board.getBox(3,0);
-            twoUpElephantSpot = board.getBox(4,0);
-            threeUpElephantSpot = board.getBox(5, 0);
-            redMouseSpot = board.getBox(6,0);
-            waterSpot = board.getBox(3, 1);
+            elephantSpot = board.getBox(0,2);
+            upElephantSpot = board.getBox(0,3);
+            twoUpElephantSpot = board.getBox(0,4);
+            threeUpElephantSpot = board.getBox(0, 5);
+            redMouseSpot = board.getBox(0,6);
+            waterSpot = board.getBox(1, 3);
         } catch (Exception e) {
             System.out.println(e);
         }
